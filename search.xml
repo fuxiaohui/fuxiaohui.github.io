@@ -27,7 +27,7 @@
       <title>Java面试题14</title>
       <link href="/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9814/"/>
       <url>/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9814/</url>
-      <content type="html"><![CDATA[<ol><li><p>集合的种类与区别</p></li><li><p>集合与一堆数组的区别，请结合做过的项目说一下在何种情况下会使用到一维数组</p></li><li><p>请写出springmvc常用的注解及其作用</p></li><li><p>请简述使用过的webservice框架并简述如何调用其过程</p></li><li><p>请简单描述如何编写一个点击中奖的程序，此程序需要将中奖率控制在40%(无需写具体的程序代码，只需要简述自己的想法即可)</p></li><li><p>如下两张表</p><p>A:</p><p>| ID(主键) |<br>| ——– |<br>| 1        |<br>| 2        |<br>| 3        |<br>| 4        |</p><p>B:</p><p>| ID   | Value |<br>| —- | —– |<br>| 1    | 1     |<br>| 1    | 2     |<br>| 2    | 3     |<br>| 3    | 5     |<br>| 5    | 5     |<br>| 6    | 6     |</p><p>请写出一下sql语句的结果:<br>1).select <em> from A,B where a.id=b.id(+);<br>2).select </em> from A,B where a.id=b.id;</p></li></ol>]]></content>
+      <content type="html"><![CDATA[<ol><li><p>集合的种类与区别</p></li><li><p>集合与一堆数组的区别，请结合做过的项目说一下在何种情况下会使用到一维数组</p></li><li><p>请写出springmvc常用的注解及其作用</p></li><li><p>请简述使用过的webservice框架并简述如何调用其过程</p></li><li><p>请简单描述如何编写一个点击中奖的程序，此程序需要将中奖率控制在40%(无需写具体的程序代码，只需要简述自己的想法即可)</p></li><li><p>如下两张表</p></li></ol><p>A表</p><table><thead><tr><th>ID</th></tr></thead><tbody><tr><td>1</td></tr><tr><td>2</td></tr><tr><td>3</td></tr><tr><td>4</td></tr></tbody></table><p>B表</p><table><thead><tr><th>ID</th><th>Value</th></tr></thead><tbody><tr><td>1</td><td>1</td></tr><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>3</td></tr><tr><td>3</td><td>5</td></tr><tr><td>5</td><td>5</td></tr><tr><td>6</td><td>6</td></tr></tbody></table><p>   请写出一下sql语句的结果:<br>   1).select <em> from A,B where a.id=b.id(+);<br>   2).select </em> from A,B where a.id=b.id;</p>]]></content>
       
       <categories>
           
