@@ -455,31 +455,22 @@
       
         
           
-            <ol>
-<li><p>“static”关键字是什幺意思? Java中是否可以覆盖(override)一个private或者是static的方法?</p>
-</li>
-<li><p>Java中的方法覆盖(Overriding)和方法重载(Overloading)是什么意思?二者有什么不同。</p>
-</li>
-<li><p>接口和抽象类的区别是什么?接口中可以定义变量吗?</p>
-</li>
-<li><p>什么是值传递和引用传递?</p>
-</li>
-<li><p>创建线程有几种不同的方式?你喜欢哪一种?为什么?</p>
-</li>
-<li><p>Java集合类框架的基本接口有哪些?</p>
-</li>
-<li><p>关于StringBuilder,有以下说法，字符串拼接要用StringBuilder,不要用+，也不要用StringBuffer, 然<br>后性能就是最好的了，真的是这样吗?请说明+、stringbuilder. stringbuffer 适用的场景和各自的优缺点;</p>
-</li>
-<li><p>Java中堆和栈的区别，堆的结构是什么样子的?什么是堆中的永久代(Perm Gen space)?</p>
-</li>
-<li><p>在Java中，对象什么时候可以被垃圾回收?</p>
-</li>
-<li><p>阅读Shape和Circle两个类的定义。在序列化一个Circle的对象circle 到文件时，下 面哪个字段会被保<br>存到文件中?</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Shape</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span> <span class="keyword">extends</span> <span class="title">Shape</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> radius;</span><br><span class="line">    <span class="keyword">transient</span> <span class="keyword">int</span> color;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String type = <span class="string">"Circle"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-
           
+“static”关键字是什幺意思? Java中是否可以覆盖(override)一个private或者是static的方法?
+
+Java中的方法覆盖(Overriding)和方法重载(Overloading)是什么意思?二者有什么不同。
+
+接口和抽象类的区别是什么?接口中可以定义变量吗?
+
+什么是值
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/30/Java面试题21/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -647,89 +638,18 @@
       
         
           
-            <p>高级工程师面试题(不用做完, 挑你最擅长的)</p>
-<ol>
-<li><p>阅读如下JavaScript脚本, 并选择输出结果()</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = &#123;<span class="attr">a</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">document</span>.write(<span class="number">1</span>);&#125;&#125;;</span><br><span class="line"><span class="keyword">var</span> d = c;</span><br><span class="line">c = &#123;<span class="attr">a</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">document</span>.write(<span class="number">2</span>);&#125;&#125;;</span><br><span class="line">c.a();</span><br><span class="line">d.a();</span><br></pre></td></tr></table></figure>
-<p>A. 11</p>
-<p>B. 12</p>
-<p>C. 22</p>
-<p>D. 21</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>如下代码输出结果:()</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">    str = <span class="string">"A"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(StringBuffer sb)</span> </span>&#123;</span><br><span class="line">    sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">    sb.append(<span class="string">"A"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(String str, StringBuffer sb)</span> </span>&#123;</span><br><span class="line">    str = <span class="keyword">new</span> String(<span class="string">"A"</span>);</span><br><span class="line">    sb.append(<span class="string">"A"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String str = <span class="string">"a"</span>;</span><br><span class="line">    StringBuffer sb = <span class="keyword">new</span> StringBuffer(<span class="string">"a"</span>);</span><br><span class="line">    process(str);</span><br><span class="line">    System.out.println(str);</span><br><span class="line">    process(sb);</span><br><span class="line">    System.out.println(sb);</span><br><span class="line">    process(str, sb);</span><br><span class="line">    System.out.println(str);</span><br><span class="line">    System.out.println(sb);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>A. A        aA         A        aA</p>
-<p>B. a        aA        a        aA</p>
-<p>C. a        a        a        aA</p>
-<p>D. a        a        a        a</p>
-<p>E. A        A        A        A</p>
-</li>
-</ol>
-<ol start="3">
-<li>有一个int型数组的内容为[8,12,1,3,15,32,100,86], 用JAVA或C#写一个排序方法，排完后数组的内容会从小到大排列:[1,3,8,12,15,32.86, 100]。</li>
-</ol>
-<ol start="4">
-<li>数字推理题:观察数字下列数字:<br>1、5、11、19、 29、 …..这列数中第10个数是多少?第100个数是多少? (写出案即可，不用写程序)</li>
-</ol>
-<ol start="5">
-<li>读取并打印/tmp/目录下所有文件名的路径,用递归算法列所有子目录下文件路径, 获取文件列表可以用findfile(),获取目录列表可以用函数finddir(),不需要完整的函数,用类JAVA或类C#语言即可.</li>
-</ol>
-<ol start="6">
-<li>摸奖游戏:密封箱子里有3个红球，3个白球，玩家闭上眼睛从里面抓出了个球来，如果抓出来的3个球都为红球，或者都为白球就算中奖，请问中奖的概率是多少?</li>
-</ol>
-<ol start="7">
-<li>数据库编程题<ol>
-<li>如何查找和删除数据库中重复数据</li>
-<li>有如下表记录, 用一句SQL查询出每个用户最近次登陆的记录(每个用户只显示一条最近登陆记录)</li>
-</ol>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Id</th>
-<th>Name</th>
-<th>Email</th>
-<th>LastLogon</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>100</td>
-<td>test4</td>
-<td><a href="mailto:test4@yahoo.cn" target="_blank" rel="noopener">test4@yahoo.cn</a></td>
-<td>2007-11-25 16:31:26</td>
-</tr>
-<tr>
-<td>13</td>
-<td>test1</td>
-<td><a href="mailto:test1@yahoo.cn" target="_blank" rel="noopener">test1@yahoo.cn</a></td>
-<td>2008-10-21 17:21:23</td>
-</tr>
-<tr>
-<td>19</td>
-<td>test1</td>
-<td><a href="mailto:test1@yahoo.cn" target="_blank" rel="noopener">test1@yahoo.cn</a></td>
-<td>2007-09-19 18:30:32</td>
-</tr>
-<tr>
-<td>42</td>
-<td>test2</td>
-<td><a href="mailto:test2@yahoo.cn" target="_blank" rel="noopener">test2@yahoo.cn</a></td>
-<td>2008-08-08 10:21:23</td>
-</tr>
-<tr>
-<td>23</td>
-<td>test2</td>
-<td><a href="mailto:test2@yahoo.cn" target="_blank" rel="noopener">test2@yahoo.cn</a></td>
-<td>2007-02-21 14:23:12</td>
-</tr>
-</tbody>
-</table>
+          高级工程师面试题(不用做完, 挑你最擅长的)
 
-          
+阅读如下JavaScript脚本, 并选择输出结果()
+12345var c = &#123;a:function()&#123;document.write(1);&#125;&#125;;var d = c;c = &#123;a:function
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/15/Java面试题20/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -897,144 +817,58 @@
       
         
           
-            <p>SQL题</p>
-<ol>
-<li>下列两张是学生表和成绩表:</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> student;</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>code</th>
-<th>name</th>
-<th>age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>武松</td>
-<td>22</td>
-</tr>
-<tr>
-<td>2</td>
-<td>貂蝉</td>
-<td>18</td>
-</tr>
-<tr>
-<td>3</td>
-<td>赵云</td>
-<td>22</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> score;</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>code</th>
-<th>year</th>
-<th>subject</th>
-<th>score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>2006</td>
-<td>语文</td>
-<td>60</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2006</td>
-<td>数学</td>
-<td>55</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2006</td>
-<td>体育</td>
-<td>120</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2006</td>
-<td>体育</td>
-<td>50</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2006</td>
-<td>数学</td>
-<td>75</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2006</td>
-<td>语文</td>
-<td>80</td>
-</tr>
-<tr>
-<td>3</td>
-<td>2006</td>
-<td>语文</td>
-<td>85</td>
-</tr>
-<tr>
-<td>4</td>
-<td>2006</td>
-<td>数学</td>
-<td>80</td>
-</tr>
-<tr>
-<td>4</td>
-<td>2006</td>
-<td>体育</td>
-<td>90</td>
-</tr>
-</tbody>
-</table>
-<p>请写出下列sql查询语句;<br>​    1) Score 表中数学80分以下的记录<br>​    2) 数学80分以下的同学名字<br>​    3) code为1的学生分数高于90的科目<br>​    4) 名叫武松的学生的不及格 ( 60分及格)的科目<br>​    5) 2006 年语文的平均分<br>​    6) 赵云的平均分<br>​    7) 同时列出所有科目 2006年的平均分</p>
-<ol start="2">
-<li><p>请列举两个以上你知道的ddl命令</p>
-</li>
-<li><p>设有图书管理数据库:<br>图书(总编号C(6),分类号C(8),书名C(16),作者C(6),出版单位C(20),单价N(6,2))<br>读者(借书证号C(4),单位C(8),姓名C(6),性别C(2),职称C(6),地址C(20))<br>借阅(借书证号C(4),总编号C(6),借书日期D(8))<br>对于图书管理数据库,求CCIE单位借阅图书的读者的人数，下面SQL语句正确的是_______?<br>SELECT ______ FROM 借阅 WHERE 借书证号 _______<br>A、COUNT (DISTINCT借书证号)<br>IN (SELECT借书证号FROM读者WHERE单位=”CCIE”)<br>B、COUNT (DISTINCT借书证号)<br>IN (SELECT借书证号FROM借阅WHERE单位=”CCIE”)<br>C、SUM (DISTINCT借书证号)<br>IN (SELECT借书证号FROM读者WHERE单位=”CCIE”)<br>D、SUM (DISTINCT借书证号)<br>IN (SELECT借书证号FOR借阅WHERE单位= CCIE”)</p>
-</li>
-</ol>
-<ol start="4">
-<li><p>以下程序运行结果是什么?</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TryCatch</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        TryCatch c = <span class="keyword">new</span> TryCatch();</span><br><span class="line">		c.method();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">"A"</span>);</span><br><span class="line">        <span class="keyword">int</span> i= <span class="number">10</span> / <span class="number">0</span>;</span><br><span class="line">        System.out.println(<span class="string">"B"</span>);</span><br><span class="line">    &#125; <span class="keyword">catch</span>(Exception e) &#123;</span><br><span class="line">		System.out.println(<span class="string">"C"</span>);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">"D"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>以下程序运行结果是什么?</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Inherance</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ChildClass clazz = <span class="keyword">new</span> ChildClass();</span><br><span class="line">		ChildClass.staticMethod();</span><br><span class="line">        clazz.method();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ParentClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ParentClass</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"A"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"B"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"C"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ChildClass</span> <span class="keyword">extends</span> <span class="title">ParentClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ChildClass</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"X"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticMethod</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Y"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Z"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>写一个类实现singleton设计模式</p>
-</li>
-</ol>
-<ol start="7">
-<li><p>请描述JDK的集合类,及其它们各自的特点</p>
-</li>
-<li><p>若使用开源软件开发一个中大型的J2EE Web Application ,你推荐使用的会有哪些开源的framework或工具,并请分别描述它们的作用</p>
-</li>
-</ol>
-<ol start="9">
-<li><p>分析题(必答题)</p>
-<ul>
-<li><p>作为时尚群体，年轻人的消费空间很大，比较喜欢尝鲜，衣服和各种生活物品只进不出。但小户型房子，储物空间有限没有足够地方容纳，必须要推陈应新。但目前处理旧衣物的方式有限:独生子女群体居多，也没有家人亲戚可以赠送。即使知道哪里有灾难发生，灾民缺衣少物也没有通道进行捐赠;一手市场耗费精力，且效果不好….所以， 需要建立一个 公益捐物网站， 可随时提交捐赠需求，等待有人上门收取，轻松做到眼不见心不烦。捐赠带来额外好处: 1.换取公益积分(积分可用于订阅杂志、享受参与活动的商家优惠、换取书籍等) 2.公益积分可冲抵水电费….</p>
-</li>
-<li><p>业务故事:小A有一批衣服需要捐赠，他在手机上提交一份捐赠需求，写明自已要捐赠什么衣服，新旧程度，多少数量，什么方式预约，上门时间…小A提交捐赠后，收到预约电话，约好了3天后的周末下午上门取衣服。到了预定的时间，上门取衣服的社 工检查了捐赠的数量后，拿出手机查找到小A捐赠的那笔单子，确认收到几件衣服，并发送积分。小A捐赠了几次衣服后，发现自己拥有了不少公益积分，小A可以在积分频道可以兑换书籍，也可以兑换一些公益合作商家的优惠卡，如洗车、吃饭等。</p>
-</li>
-</ul>
-<ol>
-<li>此公益捐物网站，至少应包含哪些功能?并请简要描述功能。</li>
-<li>针对业务故事，试画相应的业务流程图，明确参与方及功能之间的流程。</li>
-<li>针对以上需求，设计数据字典和数据关系图。</li>
-</ol>
-</li>
-</ol>
+          SQL题
 
-          
+下列两张是学生表和成绩表:
+
+1select * from student;
+
+
+
+code
+name
+age
+
+
+
+
+1
+武松
+22
+
+
+2
+貂蝉
+18
+
+
+3
+赵云
+22
+
+
+
+1select * from score;
+
+
+
+code
+year
+subject
+score
+
+
+
+
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/15/Java面试题19/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1190,77 +1024,32 @@
       
         
           
-            <h3 id="一、多选题"><a href="#一、多选题" class="headerlink" title="一、多选题"></a>一、多选题</h3><ol>
-<li><p>请选出下列选项哪些是计算机操作系统</p>
-<p>A. Windows</p>
-<p>B. Solaris</p>
-<p>C. Linux</p>
-<p>D. DOS</p>
-<p>E. OSX</p>
-<p>F. iOS</p>
-<p>G. Symbian</p>
-<p>H. Android</p>
-</li>
-<li><p>请选出下列选项哪些不是编程语言</p>
-<p>A. PHP</p>
-<p>B. Java</p>
-<p>C. C++</p>
-<p>D. C#</p>
-<p>E. C</p>
-<p>F. CSS</p>
-<p>G. COBOL</p>
-<p>H. Delphi</p>
-<p>I. Perl</p>
-<p>J. JavaScript</p>
-</li>
-<li><p>请选出下列选项哪些不是数据库</p>
-<p>A. Oracle</p>
-<p>B. DB2</p>
-<p>C. FoxPro</p>
-<p>D. MySQL</p>
-<p>E. SQLServer</p>
-<p>F. Access</p>
-<p>G. PostgreSQL</p>
-</li>
-<li><p>请选择你所使用过的AJAX框架</p>
-<p>A. Dojo</p>
-<p>B. Echo 2</p>
-<p>C. DWR</p>
-<p>D. AjaxAC</p>
-<p>E. JPSpan</p>
-<p>F. XAJAX</p>
-<p>G. ExtJS</p>
-<p>H. Prototype</p>
-<p>I. YUI</p>
-<p>J. GWT</p>
-<p>K. jQuery</p>
-</li>
-</ol>
-<h3 id="二、简答题"><a href="#二、简答题" class="headerlink" title="二、简答题"></a>二、简答题</h3><ol>
-<li>这段代码可能有什么问题: <code>String retValue = API.functionA();if(retValue.equals(&quot;true&quot;)){...}</code></li>
-<li>==与equals的区别?</li>
-<li>Java是如何处理整型的溢出?</li>
-<li>静态变量在什么时候加载?编译期还是运行期?静态代码块加载的时机呢?</li>
-<li>Java中解析XML有几种方法?简单写一段加载方法。</li>
-</ol>
-<h3 id="三、设计题"><a href="#三、设计题" class="headerlink" title="三、设计题"></a>三、设计题</h3><ol>
-<li><p>编写一个类, 要求实现整数数组升序和降序两个功能以供其他类调用. 请说明为什么选择用这样的算法?</p>
-</li>
-<li><p>有如下三张表, 请写一条SQL语句查询出选了2门课以上的学生的名称</p>
-<p><strong>学生表student</strong></p>
-<p>主键: s_id int</p>
-<p>学生名称: s_name varchar2</p>
-</li>
-</ol>
-<p>   <strong>课程表course</strong></p>
-<p>   主键: c_id int</p>
-<p>   课程名称:c_name varchar2</p>
-<p>   <strong>选课表student_course</strong></p>
-<p>   主键: id int</p>
-<p>   学生ID: s_id int</p>
-<p>   课程ID: c_id int</p>
+          一、多选题
+请选出下列选项哪些是计算机操作系统
+A. Windows
+B. Solaris
+C. Linux
+D. DOS
+E. OSX
+F. iOS
+G. Symbian
+H. Android
 
-          
+请选出下列选项哪些不是编程语言
+A. PHP
+B. Java
+C. C++
+D. C#
+E. C
+F.
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/15/Java面试题18/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1416,83 +1205,20 @@
       
         
           
-            <p>软件开发工程师笔试题</p>
-<p>时间:60分钟</p>
-<p>注意:</p>
-<p>(1)题目并不要求全做，选择自己会的即可，掌握好时间。<br>(2)请将答案写到答题纸上，写上名字和联系方式。<br>(3)答题过程要求独立完成，不能求助他人，翻阅资料或上网查询。<br>(4)编程题不限定语言，请使用自己擅长的语言并注明。</p>
-<ol>
-<li><p>编写一个函数，返回n个字符串列表，满足:从数字1开始，如果能被3整除为”Fizz”,<br>被5整除为”Buzz”，被3和5同时整除为“FizzBuzz”,否则字符串为数字本身。<br>N=15<br>结果:<br>[“1”,”2”,”Fizz”,”4”,”Buzz”,”Fizz”,”7”,”8”,”Fizz”,”Buzz”,”11”,”Fizz”,”13”,14”,” FizzBuzz”]</p>
-</li>
-<li><p>一个int型数组，除了1个元素只出现过一次外，其他的元素都出现过两次，请找出那个元素</p>
-<p>注意:</p>
-<ol>
-<li>算法必须满足线性时间复杂度</li>
-<li>尽量没有额外的内存开销</li>
-</ol>
-</li>
-<li><p>有12个外观相同的篮球，其中1个的重量和其他11个的重量不同(有可能轻，有可能重)，怎么用最少的比较来找出那个球。</p>
-</li>
-<li><p>根据下面两个表写SQL查询：<br>表Person(主键PersonId)</p>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Column Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PersonId</td>
-<td>int</td>
-</tr>
-<tr>
-<td>FirstName</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>LastName</td>
-<td>varchar</td>
-</tr>
-</tbody>
-</table>
-<p>   表Address(主键AddressId)</p>
-<table>
-<thead>
-<tr>
-<th>Column Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AddressId</td>
-<td>int</td>
-</tr>
-<tr>
-<td>PersonId</td>
-<td>int</td>
-</tr>
-<tr>
-<td>City</td>
-<td>varchar</td>
-</tr>
-<tr>
-<td>State</td>
-<td>varchar</td>
-</tr>
-</tbody>
-</table>
-<p>   获取 Person表中的每个人的下列信息，不管这个人有没有地址：<br>   FirstName, LastName, City, State</p>
-<ol start="5">
-<li><p>下水道并盖为什么是圆的?</p>
-</li>
-<li><p>写下你最近遇到的一个比较麻烦的技术问题，并写下解决过程。</p>
-</li>
-</ol>
+          软件开发工程师笔试题
+时间:60分钟
+注意:
+(1)题目并不要求全做，选择自己会的即可，掌握好时间。(2)请将答案写到答题纸上，写上名字和联系方式。(3)答题过程要求独立完成，不能求助他人，翻阅资料或上网查询。(4)编程题不限定语言，请使用自己擅长的语言并注明。
 
-          
+编写一个函数，返回n个字符串列表，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/15/Java面试题17/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1648,148 +1374,19 @@
       
         
           
-            <ol>
-<li><p>写一个方法, 将长整型数值表示的秒数, 转换为”X天X小时X分钟X秒”这样格式的字符串返回. (当X为0时, 该单位的内容不输出. 例如: 3天6小时40秒, 要求使用循环, 请考虑内存使用)(5分)</p>
-</li>
-<li><p>打印杨辉三角形(要求打印出10行如下图)(15分)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">      1</span><br><span class="line">     1 1</span><br><span class="line">    1 2 1</span><br><span class="line">   1 3 3 1</span><br><span class="line">  1 4 6 4 1</span><br><span class="line">1 5 10 10 5 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>实现数组排序的方法, 要求输入一个整数数组，返回一个核好序的新数组。(10分)</p>
-</li>
-<li><p>实现在数组中查找元素的方法, 要求方法输入一个有序的数组和一个整收n，返回n在数组中的位置。(找到即返回,请考虑效率)(10分)</p>
-</li>
-<li><p>数据库</p>
-<p>1)数据库事务是什么?什么情况下使用?请举例说明死锁的情况(5分)</p>
-<p>现有数据库表结构如下(三个表除了主键以外没有创建任何索引)</p>
-<p>客户信息表 cust_t</p>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>类型</th>
-<th>名称</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>custid</td>
-<td>long</td>
-<td>客户id</td>
-<td>PK</td>
-</tr>
-<tr>
-<td>custname</td>
-<td>vchar(32)</td>
-<td>客户名称</td>
-</tr>
-</tbody>
-</table>
-<p>   产品信息表 product_t</p>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>类型</th>
-<th>名称</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>productid</td>
-<td>long</td>
-<td>产品id</td>
-<td>PK</td>
-</tr>
-<tr>
-<td>productname</td>
-<td>vchar(64)</td>
-<td>产品名称</td>
-<td></td>
-</tr>
-<tr>
-<td>category</td>
-<td>char(1)</td>
-<td>产品种类</td>
-<td></td>
-</tr>
-<tr>
-<td>model</td>
-<td>vchar(32)</td>
-<td>产品型号</td>
-<td></td>
-</tr>
-<tr>
-<td>price</td>
-<td>number(12,2)</td>
-<td>单价</td>
-<td></td>
-</tr>
-<tr>
-<td>stock</td>
-<td>int</td>
-<td>库存数量</td>
-</tr>
-</tbody>
-</table>
-<p>   订单信息表 order_t</p>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>类型</th>
-<th>名称</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>orderno</td>
-<td>char(8)</td>
-<td>订单编号</td>
-<td>PK</td>
-</tr>
-<tr>
-<td>custid</td>
-<td>long</td>
-<td>客户id</td>
-<td></td>
-</tr>
-<tr>
-<td>productid</td>
-<td>long</td>
-<td>产品id</td>
-<td></td>
-</tr>
-<tr>
-<td>price</td>
-<td>number(12,2)</td>
-<td>单价</td>
-<td></td>
-</tr>
-<tr>
-<td>quantity</td>
-<td>int</td>
-<td>数量</td>
-<td></td>
-</tr>
-<tr>
-<td>orderdate</td>
-<td>date</td>
-<td>下单日期</td>
-</tr>
-</tbody>
-</table>
-<p>   以下问题可能存在不同数据库(Oracle/db2/mysql/SQL Server等)的差异，请在答题之前先说明您的答案是基于哪种数据库考虑的:以下答题基于_____数据库为准。</p>
-<p>​    2)请写出对产品信息表进行分页查询的SQL语句(以问号代替分页参数)(12分)</p>
-<p>​    3)请说明以下两个SQL语句以及执行结果的区别(4分)</p>
-<p>​    </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from order_t a, cust_t b where a.custid=b.custid and a.orderdate=?;</span><br><span class="line"></span><br><span class="line">select * from order_t a join cust_t b on a.custid=b.custid and a.orderdate=?;</span><br></pre></td></tr></table></figure>
-
           
+写一个方法, 将长整型数值表示的秒数, 转换为”X天X小时X分钟X秒”这样格式的字符串返回. (当X为0时, 该单位的内容不输出. 例如: 3天6小时40秒, 要求使用循环, 请考虑内存使用)(5分)
+
+打印杨辉三角形(要求打印出10行如下图)(15分)
+123456      1     1 1
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/15/Java面试题16/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1945,9 +1542,15 @@
       
         
           
-            <p><strong>题目</strong>: 使用Spring Boot完成一个http Rest API的开发，可使用你熟悉的数据库和ORM框架.该API使用账户的积分来兑换礼品. 目前可供兑换的礼品为可乐，薯条和咖啡，分别需要30, 40，50积分.每次兑换需要检查礼品的库存，需要5到30秒之间的一个随机值，请用代码模拟该过程.检查库存后请在数据库中减去账户上的积分.系统目前有两个用户A和B,账户分别有100，150个积分。请设计和实现该积分兑换API.<br><strong>完成时间</strong>: 2小时之内</p>
-
-          
+          题目: 使用Spring Boot完成一个http Rest API的开发，可使用你熟悉的数据库和ORM框架.该API使用账户的积分来兑换礼品. 目前可供兑换的礼品为可乐，薯条和咖啡，分别需要30, 40，50积分.每次兑换需要检查礼品的库存，需要5到30秒之间的一个随机值，请用代码模拟该过程.检查
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/14/Java面试题15/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2115,80 +1718,24 @@
       
         
           
-            <ol>
-<li><p>集合的种类与区别</p>
-</li>
-<li><p>集合与一堆数组的区别，请结合做过的项目说一下在何种情况下会使用到一维数组</p>
-</li>
-<li><p>请写出springmvc常用的注解及其作用</p>
-</li>
-<li><p>请简述使用过的webservice框架并简述如何调用其过程</p>
-</li>
-<li><p>请简单描述如何编写一个点击中奖的程序，此程序需要将中奖率控制在40%(无需写具体的程序代码，只需要简述自己的想法即可)</p>
-</li>
-<li><p>如下两张表</p>
-</li>
-</ol>
-<p>A表</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-</tr>
-<tr>
-<td>2</td>
-</tr>
-<tr>
-<td>3</td>
-</tr>
-<tr>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p>B表</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td>2</td>
-<td>3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>5</td>
-</tr>
-<tr>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>6</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-<p>   请写出一下sql语句的结果:<br>   1).select <em> from A,B where a.id=b.id(+);<br>   2).select </em> from A,B where a.id=b.id;</p>
-
           
+集合的种类与区别
+
+集合与一堆数组的区别，请结合做过的项目说一下在何种情况下会使用到一维数组
+
+请写出springmvc常用的注解及其作用
+
+请简述使用过的webservice框架并简述如何调用其过程
+
+请简单描述如何编写一个点击中奖的程序，此程序需要将中奖率控制在40%(无需写具体的程序代码，只
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/14/Java面试题14/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2344,589 +1891,19 @@
       
         
           
-            <h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="一、填空题（每题1分，共10分）"><a href="#一、填空题（每题1分，共10分）" class="headerlink" title="一、填空题（每题1分，共10分）"></a>一、填空题（每题1分，共10分）</h3><ol>
-<li><p><code>&quot;abcdefg&quot;.substring(2,3)</code>的结果是(         )</p>
-</li>
-<li><p>下面程序的运行结果是(         ) </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String str1 = <span class="string">"hello"</span>;</span><br><span class="line">String str2 = <span class="string">"he"</span> + <span class="keyword">new</span> String(<span class="string">"llo"</span>);</span><br><span class="line">System.err.println(str1 == str2);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>String[] a = new String[10];</code> a[3]为(         ) ;  <code>int[] b = new int[10];</code> b[0]为(         ) </p>
-</li>
-<li><p><code>Math.round(11.5)</code>的返回值是(         ) ，<code>Math.round(-11.5)</code>的返回值是(          ) </p>
-</li>
-<li><p>一个long型数据在内存占(         ) 个字节。</p>
-</li>
-<li><p>表达式<code>5.3 + (int)(8.5 + 4.6) / 3 % 4</code>的值是(         ) </p>
-</li>
-<li><p>关系运算符的运算结果是(         ) 型数据</p>
-</li>
-<li><p>表示圆周率的常量是(         ) </p>
-</li>
-</ol>
-<h3 id="二、选择题（每题0-5分，共15分）"><a href="#二、选择题（每题0-5分，共15分）" class="headerlink" title="二、选择题（每题0.5分，共15分）"></a>二、选择题（每题0.5分，共15分）</h3><ol>
-<li><p>在java中，由java编译器自动导入，而无需在程序中用import导入的包是(         ) </p>
-<p>A. java.applet       </p>
-<p>B. java.lang     </p>
-<p>C. java.util     </p>
-<p>D. java.awt</p>
-</li>
-<li><p>0.6332的数据类型是(         ) </p>
-<p>A float     </p>
-<p>B double     </p>
-<p>C Float      </p>
-<p>D Double</p>
-</li>
-<li><p><code>System.out.println(&quot;5&quot; + 2);</code>的输出结果应该是(         ) </p>
-<p>A  52                   </p>
-<p>B 7                     </p>
-<p>C 2                    </p>
-<p>D 5</p>
-</li>
-<li><p>下列哪种异常是检查型异常，需要在编写程序时声明 (         ) </p>
-<p>A NullPointerException         </p>
-<p>B ClassCastException      </p>
-<p>C FileNotFoundException       </p>
-<p>D IndexOutOfBoundsException </p>
-</li>
-<li><p>下列方法中可以用来创建一个新线程的是(         ) </p>
-<p>A.继承java.lang.Runnable接口并重写run()方法</p>
-<p>B.实现java.lang.Runnable接口并重写start()方法</p>
-<p>C.实现java.lang.Thread类并实现start()方法</p>
-<p>D.继承java.lang.Thread类并重写run()方法</p>
-</li>
-<li><p>switch（）{}结构中，括号中可使用的数据类型不能是(         ) </p>
-<p>A.String        </p>
-<p>B.int     </p>
-<p>C.short    </p>
-<p>D.float</p>
-</li>
-<li><p>Socket通信使用的底层协议是(         ) </p>
-<p>A.UDP协议   </p>
-<p>B.TCP/IP协议   </p>
-<p>C.FTP协议 </p>
-<p>D.TELNET协议</p>
-</li>
-<li><p>下列叙述中，正确的是(         ) </p>
-<p>A.java语言的标识符是区分小写的</p>
-<p>B.源文件名与public类名可以不相同</p>
-<p>C.源文件名其扩展为.jar</p>
-<p>D.源文件中public类的数目不限</p>
-</li>
-<li><p>下面哪些不是Thread类的方法(         ) </p>
-<p>A start()       </p>
-<p>B run()       </p>
-<p>C exit()       </p>
-<p>D getPriority()</p>
-</li>
-<li><p>下列说法正确的有(         ) </p>
-<p>A．class中的constructor不可省略</p>
-<p>B．constructor必须与class同名，但方法不能与class同名</p>
-<p>C．constructor在一个对象被new时执行</p>
-<p>D．一个class只能定义一个constructor</p>
-</li>
-<li><p>下列说法正确的是(         ) </p>
-<p>A．LinkedList继承自List</p>
-<p>B．AbstractSet继承自Set</p>
-<p>C．HashSet继承自Set</p>
-<p>D．WeakMap继承自HashMap</p>
-</li>
-<li><p>下面哪个流类属于字符输入流(         ) </p>
-<p>A  BufferedWriter              </p>
-<p>B  FileInputStream          </p>
-<p>C  ObjectInputStream       </p>
-<p>D  InputStreamReader</p>
-</li>
-<li><p>ArrayList list = new ArrayList(20);中的list扩充几次(         ) </p>
-<p>A 0     </p>
-<p>B 1     </p>
-<p>C 2      </p>
-<p>D 3</p>
-</li>
-<li><p>下面哪些是对称加密算法(         ) </p>
-<p>A ECC </p>
-<p>B AES   </p>
-<p>C DSA   </p>
-<p>D RSA</p>
-</li>
-<li><p>新建一个流对象，下面哪个选项的代码是错误的？(         ) </p>
-<p>A）new BufferedWriter(new FileWriter(“a.txt”));</p>
-<p>B）new BufferedReader(new FileInputStream(“a.dat”));</p>
-<p>C）new GZIPOutputStream(new FileOutputStream(“a.zip”));</p>
-<p>D）new ObjectInputStream(new FileInputStream(“a.dat”));</p>
-</li>
-<li><p>下列属于合法的java标识符的是(         ) </p>
-<p>A._cat       </p>
-<p>B.5books </p>
-<p>C.+static    </p>
-<p>D.-3.14159</p>
-</li>
-<li><p>以下哪些方法不是Itertor的方法？(         ) </p>
-<p>A.next       </p>
-<p>B.equals     </p>
-<p>C.remove     </p>
-<p>D.hasNext</p>
-</li>
-<li><p>File类型中定义了什么方法来判断一个文件是否存在？(         ) </p>
-<p>A.creatNewFile   </p>
-<p>B.renameTo   </p>
-<p>C.delete     </p>
-<p>D.exists</p>
-</li>
-<li><p>关于构造器是否可以被override，是否可以被overload(         ) </p>
-<p>A 能，能            </p>
-<p>B 不能，能 </p>
-<p>C 不能，能        </p>
-<p>D 能，不能 </p>
-</li>
-<li><p>如果对象的引用被置为null，垃圾收集器什么时候释放对象占用的内存？(         ) </p>
-<p>A.立即释放       </p>
-<p>B.方法调用结束后释放             </p>
-<p>C.下一个垃圾回收周期      </p>
-<p>D.不确定</p>
-</li>
-<li><p>关于接口和抽象类不正确是(         ) </p>
-<p>A． 接口中所有的方法隐含的都是抽象的，而抽象类则可以同时包含抽象和非抽象的方法</p>
-<p>B． 类可以实现很多个接口，但是只能继承一个抽象类</p>
-<p>C． Java接口与抽象类都可以包含非final的变量</p>
-<p>D． 接口是绝对抽象的，不可以被实例化，抽象类也不可以被实例化</p>
-</li>
-<li><p>存在使当i+1&lt;i时，i为多少？(         ) </p>
-<p>A.0  </p>
-<p>B.1  </p>
-<p>C.2147483647     </p>
-<p>D.不存在</p>
-</li>
-<li><p>Java Application中的主类许包含main方法，main方法的返回类型是什么？(         ) </p>
-<p>A.int        </p>
-<p>B.float  </p>
-<p>C.double     </p>
-<p>D.void</p>
-</li>
-<li><p>下列哪些语句关于java内存回收的说明是正确的(         ) </p>
-<p>A. 程序员必须创建一个线程来释放内存</p>
-<p>B. 内存回收程序负责释放无用内存</p>
-<p>C. 内存回收程序允许程序员直接释放内存</p>
-<p>D. 内存回收程序可以在制定的时间内释放内存对象</p>
-</li>
-<li><p>下列关于修饰符混用的说法，错误的是(         ) </p>
-<p>A．abstract不能与final并列修饰同一个类</p>
-<p>B．abstract类中可以有private的成员</p>
-<p>C．abstract方法必须在abstract类中</p>
-<p>D．static方法中能处理非static的属性</p>
-</li>
-<li><p>下列说法正确的有(         ) </p>
-<p>A． class中的constructor不可省略</p>
-<p>B． constructor必须与class同名，但方法不能与class同名</p>
-<p>C． constructor在一个对象被new时执行</p>
-<p>D．一个class只能定义一个constructor</p>
-</li>
-<li><p>下列哪种说法是正确的(         ) </p>
-<p>A．实例方法可直接调用超类的实例方法</p>
-<p>B．实例方法可直接调用超类的类方法</p>
-<p>C．实例方法可直接调用其他类的实例方法</p>
-<p>D．实例方法可直接调用本类的类方法</p>
-</li>
-<li><p>下列哪一种叙述是正确的(         ) </p>
-<p>A． abstract修饰符可修饰字段、方法和类</p>
-<p>B． 抽象方法的body部分必须用一对大括号{ }包住</p>
-<p>C． 声明抽象方法，大括号可有可无</p>
-<p>D． 声明抽象方法不可写出大括号</p>
-</li>
-<li><p>Java语言中，String类的IndexOf()方法返回的类型是？(         ) </p>
-<p>A、Int16     </p>
-<p>B、Int32     </p>
-<p>C、int       </p>
-<p>D、long</p>
-</li>
-<li><p>下列哪些语句关于内存回收的说明是正确的(         ) </p>
-<p>A 程序员必须创建一个线程来释放内存</p>
-<p>B 内存回收程序负责释放无用内存</p>
-<p>C 内存回收程序允许程序员直接释放内存</p>
-<p>D 内存回收程序可以在指定的时间释放内存对象</p>
-</li>
-</ol>
-<h3 id="三、简答题（共10分）"><a href="#三、简答题（共10分）" class="headerlink" title="三、简答题（共10分）"></a>三、简答题（共10分）</h3><ol>
-<li><p>a = a + b 与 a += b 的区别？（5分）</p>
-</li>
-<li><p>final、finalize 和 finally 的不同之处？（5分） </p>
-</li>
-</ol>
-<h2 id="JavaWeb"><a href="#JavaWeb" class="headerlink" title="JavaWeb"></a>JavaWeb</h2><h3 id="一、填空题（每题1分，共10分）-1"><a href="#一、填空题（每题1分，共10分）-1" class="headerlink" title="一、填空题（每题1分，共10分）"></a>一、填空题（每题1分，共10分）</h3><ol>
-<li><p>使用JDBC链接数据库的顺序是(         ) </p>
-<p>A.加载驱动</p>
-<p>B.导入驱动包</p>
-<p>C.发送并处理SQL语句</p>
-<p>D.建立于数据库的链接</p>
-<p>E.关闭链接</p>
-</li>
-<li><p>JSP九大内置对象, 分别为：(         ) 、(         ) 、(         ) 、(         ) 、(         ) 、(         ) 、(         ) 、(         ) 、(         ) (每个0.5)</p>
-</li>
-<li><p>JSP中四大域对象, 分别为: (         ) 、(         ) 、(         ) 、(         )  (每个0.5)</p>
-</li>
-<li><p>JSP中三大指令, 分别为: (         ) 、(         ) 、(         )  (每个0.5)</p>
-</li>
-<li><p>在tomcat中访问helloapp应用的login.html文件时，在浏览器地址栏应写的url为：(         ) </p>
-</li>
-<li><p>jsp中实现请求转发的标记为：(         ) </p>
-</li>
-</ol>
-<h3 id="二、选择题（每题0-5分，共15分）-1"><a href="#二、选择题（每题0-5分，共15分）-1" class="headerlink" title="二、选择题（每题0.5分，共15分）"></a>二、选择题（每题0.5分，共15分）</h3><ol>
-<li><p>关于转发和重定向以下哪些说法是正确的(         ) </p>
-<p>A.转发url会改变</p>
-<p>B.重定向url不会改变</p>
-<p>C.重定向保持request中存放参数</p>
-<p>D.转发能保持request中存放参数</p>
-</li>
-<li><p>Oracle数据库表空间与用户的关系是(         ) </p>
-<p>A.一对一 </p>
-<p>B.一对多 </p>
-<p>C.多对一 </p>
-<p>D.多对多</p>
-</li>
-<li><p>哪一子句可实现 SELECT 语句查询员工平均工资小于5的部门信息 ?(         ) </p>
-<p>A. GROUP BY dept_id WHERE AVG(sal) &lt; 5</p>
-<p>B. GROUP BY AVG(sal) HAVING AVG(sal) &lt; 5</p>
-<p>C. GROUP BY dept_id HAVING AVG(sal) &lt; 5</p>
-<p>D. GROUP BY AVG(sal) &lt; 5</p>
-</li>
-<li><p>下列哪个集合操作符返回两个查询所选择的所有的行(         ) </p>
-<p>A Union      </p>
-<p>B Union all  </p>
-<p>C Union only </p>
-<p>D connect by</p>
-</li>
-<li><p>从以下哪一个选项中可以获得Servlet的初始化参数(         ) </p>
-<p>A.Servlet    </p>
-<p>B.ServletContext </p>
-<p>C.ServletConfig  </p>
-<p>D.GenericServlet</p>
-</li>
-<li><p>哪一个对象可以用于获得浏览器发送的请求(         ) </p>
-<p>A.HttpServletRequest     </p>
-<p>B.HttpServletResponse        </p>
-<p>C.HttpServlet        </p>
-<p>D.Http </p>
-</li>
-<li><p>运行jsp需要安装<strong>___</strong>Web服务器(         ) </p>
-<p>A．Apache    </p>
-<p>B．nodejs    </p>
-<p>C．jetty </p>
-<p>D．IIS</p>
-</li>
-<li><p>下面的那一个不属于MVC模式中的对象？(         ) </p>
-<p>A. Model </p>
-<p>B. View      </p>
-<p>C. Collection        </p>
-<p>D. Controller </p>
-</li>
-<li><p>POST和GET哪一个在form提交时会自动把参数和值加入到url中(         ) </p>
-<p>A.POST       </p>
-<p>B.GET        </p>
-<p>C.两者都会   </p>
-<p>D.两者都不会</p>
-</li>
-<li><p>要实现隐藏div，使用display：(         ) </p>
-<p>A.false  </p>
-<p>B.hidden     </p>
-<p>C.””       </p>
-<p>D.none</p>
-</li>
-<li><p>在正则 表达式中\d代表什么(         ) </p>
-<p>A.数字字符   </p>
-<p>B.非数字字符 </p>
-<p>C.任意一个字母  </p>
-<p>D.任意的空白符</p>
-</li>
-<li><p>以下sql语句下划线中填入什么值能得到正确的结果?(         ) </p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">num</span>,<span class="keyword">count</span>(score) <span class="keyword">from</span> play <span class="keyword">group</span> by____</span><br></pre></td></tr></table></figure>
-<p>A.num       </p>
-<p>B.score  </p>
-<p>C.count(score)</p>
-</li>
-<li><p>以下对jdbc事务描述错误的是(         ) </p>
-<p>A.JDBC事务属于java事务的一种</p>
-<p>B.JDBC事务属于容器事务类型</p>
-<p>C.JDBC事务可以保证操作的完整性和一致性</p>
-<p>D.JDBC事务是由Connection发起的，并由Connection控制</p>
-</li>
-<li><p>以下哪些不会引起索引失效(         ) </p>
-<p>A.使用like关键字</p>
-<p>B.字符常量使用单引号</p>
-<p>C.查询条件使用函数在索引列上</p>
-<p>D.条件中包含&lt;&gt;</p>
-</li>
-<li><p>下列可以用来解析XML的是(         ) </p>
-<p>A.CSS        </p>
-<p>B.DTD        </p>
-<p>C.SAX        </p>
-<p>D.XSL </p>
-</li>
-<li><p>在不指定特殊属性的情况下，哪几种HTML标签可以手动输入文本(         ) </p>
-<p>A. <span></span></p>
-<p>B. <input type="text"></p>
-<p>C. <input type="hidden"></p>
-<p>D. <div></div></p>
-</li>
-<li><p>下面哪些属于JSTL中的表达式操作标签(         ) </p>
-<p>A．&lt;c:out&gt;   </p>
-<p>B．&lt;c:if&gt;    </p>
-<p>C．&lt;c:url&gt;   </p>
-<p>D．&lt;c:catch&gt;</p>
-</li>
-<li><p>在Servlet处理请求的方式为(         ) </p>
-<p>A、以进程的方式  </p>
-<p>B、以程序的方式  </p>
-<p>C、以线程的方式  </p>
-<p>D、以响应的方式</p>
-</li>
-<li><p>Http缺省的请求方法是(         ) </p>
-<p>A.PUT        </p>
-<p>B.GET        </p>
-<p>C.POST       </p>
-<p>D.TRACE</p>
-</li>
-<li><p>在XML中用于注释的符号是(         ) </p>
-<p>A．<!-- -->      </p>
-<p>B．&lt;?– –?&gt;     </p>
-<p>C．&lt;% %&gt;    </p>
-<p>D．&lt;!– –!&gt;</p>
-</li>
-<li><p>JDBC中，用于表示数据库连接的对象是(         ) </p>
-<p>A. Statement     </p>
-<p>B. Connection        </p>
-<p>C. DriverManager </p>
-<p>D. PreparedStatement</p>
-</li>
-<li><p>用于调用存储过程的对象是(         ) </p>
-<p>A.ResultSet      </p>
-<p>B.DriverManager  </p>
-<p>C.CallableStatemet       </p>
-<p>D.PreparedStatement</p>
-</li>
-<li><p>如果没有指定Cookie的时效，那么默认的时效是(         ) </p>
-<p>A. 一天      </p>
-<p>B. 永不过期   </p>
-<p>C. 会话级别     </p>
-<p>D. 一分钟</p>
-</li>
-<li><p>下列哪个为JSP的小脚本的标签？(         ) </p>
-<p>A．&lt;% %&gt; </p>
-<p>B．&lt;@ %&gt; </p>
-<p>C．&lt;%! %&gt;    </p>
-<p>D．&lt;%– %&gt;</p>
-</li>
-<li><p>对于每一个网站访问用户都要访问的变量，应该将它设为(         ) 变量</p>
-<p>A. Session   </p>
-<p>B. Request   </p>
-<p>C. Response  </p>
-<p>D. Application</p>
-</li>
-<li><p>在MVC设计模式中，JavaBean的作用是(         ) </p>
-<p>A、Controller       </p>
-<p>B、Model </p>
-<p>C、业务数据的封装    </p>
-<p>D、View</p>
-</li>
-<li><p>在JavaEE中属于Web层的组件有(         ) </p>
-<p>A. HTML      </p>
-<p>B. EJB       </p>
-<p>C. Applet    </p>
-<p>D. JSP</p>
-</li>
-<li><p>下列属于关系型数据库的是(         ) </p>
-<p>A. Redis     </p>
-<p>B MySql      </p>
-<p>C IMS        </p>
-<p>D MongoDB</p>
-</li>
-<li><p>如何创建Cookie?(         ) </p>
-<p>A. 使用new Cookie语句</p>
-<p>B. 调用response.addCookie方法</p>
-<p>C. 使用Cookie的setMaxAge方法</p>
-<p>D. setCookie方法</p>
-</li>
-<li><p>编写一个Filter，除继承HttpServlet类外还需要(         ) </p>
-<p>A．继承Filter 类 </p>
-<p>B．实现Filter 接口  </p>
-<p>C．继承HttpFilter 类     </p>
-<p>D．实现HttpFilter接口</p>
-</li>
-</ol>
-<h3 id="二、简答题（10分）"><a href="#二、简答题（10分）" class="headerlink" title="二、简答题（10分）"></a>二、简答题（10分）</h3><ol>
-<li>说一说Servlet生命周期(5分)</li>
-<li>get提交和post提交有何区别(5分)</li>
-</ol>
-<h2 id="Java框架"><a href="#Java框架" class="headerlink" title="Java框架"></a>Java框架</h2><h3 id="一、选择题（每题0-5分，共15分）"><a href="#一、选择题（每题0-5分，共15分）" class="headerlink" title="一、选择题（每题0.5分，共15分）"></a>一、选择题（每题0.5分，共15分）</h3><ol>
-<li><p>Struts框架可以支持以下哪种程序开发语言(         ) </p>
-<p>A.C     </p>
-<p>B.C++        </p>
-<p>C.Java       </p>
-<p>D.C#</p>
-</li>
-<li><p>以下属于struts2的控制器组件的是(         ) </p>
-<p>A： Action   </p>
-<p>B: ActionForm    </p>
-<p>C:ActionServlet      </p>
-<p>D:dispatchAction</p>
-</li>
-<li><p>以下关于ValueStack说法不正确的是(         ) </p>
-<p>A.每个Action对象实例拥有一个ValueStack对象</p>
-<p>B.每个Action对象实例拥有多个ValueStack对象</p>
-<p>C.Action中封装的需要传入下一个页面的值，这些值封装在ValueStack对象中</p>
-<p>D.ValueStack会在请求开始时创建，请求结束时消亡</p>
-</li>
-<li><p>单元测试是在软件开发过程中的哪个阶段完成的(         ) </p>
-<p>A. 可行性研究和计划</p>
-<p>B. 概要设计</p>
-<p>C. 实现</p>
-<p>D. 使用和维护</p>
-</li>
-<li><p>在struts配置中用(         ) 元素配置常量</p>
-<p>A.<const></const></p>
-<p>B.<constants></constants></p>
-<p>C.<constant></constant></p>
-<p>D.<constant-mapping></constant-mapping></p>
-</li>
-<li><p>在struts.xml文件中，使用(         ) 定义拦截器   B</p>
-<p>A.<interceptor-ref></interceptor-ref></p>
-<p>B.<interceptor></interceptor></p>
-<p>C.<intercep></intercep></p>
-<p>D.<defaull-interceptor-ref></defaull-interceptor-ref></p>
-</li>
-<li><p>在OGNL中?操作符的作用是(         ) </p>
-<p>A.取出符合选择逻辑的第一个元素</p>
-<p>B.取出符合选择逻辑的第=最后一个元素</p>
-<p>C.取出符合选择逻辑的所有元素</p>
-<p>D.以上说法都不对</p>
-</li>
-<li><p>struts2中的ActionServlet属于MVC模式(         ) </p>
-<p>A.视图</p>
-<p>B.模型</p>
-<p>C.控制器</p>
-<p>D.业务层</p>
-</li>
-<li><p>下面对Spring中Bean的注入说法正确的是(         )<br>A、Bean根据注入方式不同可以分为构造方法注入和自动装载。<br>B、使用构造方法注入构造对象的同时，完成依赖关系的建立<br>C、在关系的对象很多时，使用构造方法注入更适合<br>D、构造方法通过constructor-index属性来指定，在该标签下要指定索引的位置</p>
-</li>
-<li><p>以下说法不正确的是(         )<br>A、Spring是一个轻量级框架，大大简化了java企业级开发<br>B、Spring是企业级应用开发的一站式选择，可以取代其他已有框架<br>C、Spring框架最基本的部分是Spring Core模块，提供Ioc和依赖注入<br>D、Spring AOP是基于Spring Core的符合规范的面向切面编程的实现</p>
-</li>
-<li><p>下面对Spring框架的持久化支持说法错误的是(         )<br>A、Spring没有自己的持久化方案，它集合了现有的流行持久化框架<br>B、Spring采用JDBC模板封装了JDBC的数据库操作<br>C、Spring对各种持久化技术提供了统一的编程方式<br>D、Spring将数据库访问的checked异常转换为运行时异常</p>
-</li>
-<li><p>下面关于事务管理说法错误的是(         )<br>A、Spring事务管理方式包括编程方式、声明式<br>B、编程式采用的方式来控制事物的边界<br>C、声明式采用配置xml方式，将事务管理与实际业务代码解耦<br>D、实现编程事物，可以实现PlatformTransaction接口或是使用事务模板TransactionTemplate</p>
-</li>
-<li><p>在Hibernate中，以下关于主键生成器说法错误的是(         ) </p>
-<p>A．increment可以用于类型为long、short的主键</p>
-<p>B．identity用于如SQL Server、DB2、MySQL等支持标识列的数据库</p>
-<p>C．sequence用于如Oracle、SQL Server等支持序列的数据库</p>
-<p>D．native由Hibernate根据底层数据库自行判断采用何种主键生成策略，是由使用的数据库生成主键的值</p>
-</li>
-<li><p>在Hibernate映射文件中，关于inverse属性说法不正确的是(         ) </p>
-<p>A．inverse属性有两个值：true、false</p>
-<p>B．<many-to-one>标签有inverse属性</many-to-one></p>
-<p>C．<set>标签有inverse属性</set></p>
-<p>D．inverse属性用于指定维护关联关系的那一方</p>
-</li>
-<li><p>MyBatis指定配置文件的根元素使用的是(         ) </p>
-<p>A．<sqlmapconfig></sqlmapconfig></p>
-<p>B．<configuration></configuration></p>
-<p>C．<setting></setting></p>
-<p>D．<environments></environments></p>
-</li>
-<li><p>关于Hibernate缓存说法正确的是(         ) </p>
-<p>A．Hibernate缓存一般分为二类：一级缓存、二级缓存</p>
-<p>B．Session的evict( )方法用于从缓存中清除指定的持久化对象</p>
-<p>C．Session的clear( )方法用于刷新缓存</p>
-<p>D．Session的flush( )方法用于从缓存中清除所有持久化对象</p>
-</li>
-<li><p>关于HQL的连接查询，说法错误的是(         ) </p>
-<p>A．inner join 或 join用于内连接</p>
-<p>B．inner join fetch或 join fetch用于迫切内连接</p>
-<p>C．left outer join fetch 或 left join fetch用于迫切左外连接</p>
-<p>D．right outer join fetch 或 right join fetch用于迫切右外连接</p>
-</li>
-<li><p>关于HQL子查询中，说法错误的是(         ) </p>
-<p>A．size( )或size用于获取集合中元素的数目</p>
-<p>B．elements( )获取集合中的所有元用于素</p>
-<p>C．any关键字用于子查询语句返回所有记录</p>
-<p>D．in关键字与“=any”意思相同</p>
-</li>
-<li><p>评估CREATE TABLE 语句:</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products(</span><br><span class="line">    product_id <span class="built_in">NUMBER</span>(<span class="number">6</span>) <span class="keyword">CONSTRAINT</span> prod_id_pk PRIMARY <span class="keyword">KEY</span>,</span><br><span class="line">	product_name VARCHAR2(<span class="number">15</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>下列关于prod_id_pk选项正确的是(         ) </p>
-<p>A．可以被创建，但需要唯一索引用手工创建</p>
-<p>B．可以被创建并且会自动创建唯一索引</p>
-<p>C．可以被创建并且会自动创建非唯一索引</p>
-<p>D．可以被创建但不可以使用，因为没有指定索引</p>
-</li>
-<li><p>在Hibernate的HQL查询中，有如下代码：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String hql = "<span class="keyword">select</span> model.deptName,model.createDate <span class="keyword">from</span> Dept <span class="keyword">as</span> <span class="keyword">model</span> <span class="string">";</span></span><br><span class="line"><span class="string">Query query = session.createQuery(hql);</span></span><br></pre></td></tr></table></figure>
-<p>则query.list();返回的是(         ) </p>
-<p>A．所有部门的集合</p>
-<p>B．所有部门名称的集合</p>
-<p>C．所有部门创建日期的集合</p>
-<p>D．所有包括部门名称和创建日期的对象数组的集合</p>
-</li>
-<li><p>在Hibernate中，用于比较字符串的like操作符“like ‘%部%’”表示(         ) </p>
-<p>A．所有以“部”开头的字符串</p>
-<p>B．所有以“部”结尾的字符串</p>
-<p>C．所有包括“部”的字符串</p>
-<p>D．所有包括“部”且“部”不在开头和结尾的字符串 </p>
-</li>
-<li><p>对于HQL中的as关键字，下列说法正确的是(         ) </p>
-<p>A．必须要有</p>
-<p>B．必须没有</p>
-<p>C．可以有，也可以没有</p>
-<p>D．以上说法均不正确</p>
-</li>
-<li><p>在Hibernate中，下列说法不正确的是(         ) </p>
-<p>A．HQL是基于SQL的</p>
-<p>B．HQL提供更加面向对象的封装</p>
-<p>C．HQL是Hibernate官方推荐的查询方式</p>
-<p>D．HQL提供的是面向关系型数据库的</p>
-</li>
-<li><p>在Hibernate的Criteria查询中，查询5条记录的方法是(         ) </p>
-<p>A．criteria.setFirstResult(4);</p>
-<p>B．criteria.setFirstResult(5);</p>
-<p>C．criteria.setMaxResult(4);</p>
-<p>D．criteria.setMaxResult(5);</p>
-</li>
-<li><p>Criteria查询通过面向对象化的设计将数据查询条件封装为一个(         ) </p>
-<p>A．对象</p>
-<p>B．序列</p>
-<p>C．类</p>
-<p>D．HQL语句</p>
-</li>
-<li><p>在JAVA中，关于属性文件，下列选项说法正确的是(         ) </p>
-<p>A．属性文件以名称和值的形式保存信息</p>
-<p>B．属性文件不能写中文（？？？）</p>
-<p>C．属性文件中能保存各种数据类型的信息</p>
-<p>D．属性文件的文件扩展名是.xml</p>
-</li>
-<li><p>在Hibernate的映射文件中，id节点的property元素的(         ) 表示指定类的属性映射的表的字段名。</p>
-<p>A．name</p>
-<p>B．type</p>
-<p>C．column</p>
-<p>D．lazy </p>
-</li>
-<li><p>Spring MVC的中心控制器需要在哪里配置(         )<br>A spring-servlet.xml </p>
-<p>B build-path </p>
-<p>C tomcat </p>
-<p>D web.xml</p>
-</li>
-<li><p>SpringMVC中为了把所有请求都提交给控制器处理，需要在哪里配置*.do？(         )<br>A spring-servlet.xml </p>
-<p>B build-path </p>
-<p>C tomcat </p>
-<p>D web.xml</p>
-</li>
-<li><p>有个超链接<a href="find.do">查找</a>，为了接收这个请求，下面的说法正确的是(         )<br>A 在类上使用@Controller<br>B 在类上使用@RequestMapping(“/find”)<br>C 在方法上使用@RequestMapping(“/find”)<br>D 在方法的参数中使用@RequestMapping(“/find”)</p>
-</li>
-</ol>
-<h3 id="二、简答题（15分）"><a href="#二、简答题（15分）" class="headerlink" title="二、简答题（15分）"></a>二、简答题（15分）</h3><ol>
-<li>谈谈你对MVC的理解：(5分)</li>
-<li>hibernate的三种状态之间如何转换 ？(5分) </li>
-<li>请简述SpringMVC的工作机制？(5分) </li>
-</ol>
+          Java基础一、填空题（每题1分，共10分）
+&quot;abcdefg&quot;.substring(2,3)的结果是(         )
 
-          
+下面程序的运行结果是(         ) 
+123String str1 = "hello";String str2 = "he" + new Str
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/14/Java面试题13/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -3082,19 +2059,16 @@
       
         
           
-            <ol>
-<li><p>Insert the following record into the Franchise table:<br>Franchise No MF999<br>Franchise Name Mature Fash ions (Shet lands)<br>Franchise Address I. Lonely Spot, Lerwick Franchise Postcode 2E1IAA<br>Franchise Tel 015951245<br>Franchise Fax 015952356<br>Franchise Start Date 22nd January 2002</p>
-</li>
-<li><p>Update the above record and change the address to l, Main Street , Lerwick and the Start Date 15th February 2002.</p>
-</li>
-<li><p>Student (S#, Sname, Sage, Ssex)学生表 S#:学号; Sname:学生姓名; Sage:学生年龄; Ssex:学生性别</p>
-<p>Course (C#, Cname, T#)课程表C#:课程编号; Cname:课程名字; T#:教师编号<br>SC(S#, C#, score)成绩表S#:学号; C#: 课程编号;score:成绩<br>Teacher (T#, Tname)教师表T#: 教师编号; Tname:教师名字<br>问题: 查询没学过“叶平”老师课的同学的学号、姓名;</p>
-</li>
-<li><p>输入两个正整数m和n，求其最大公约数和最小公倍数。</p>
-</li>
-</ol>
-
           
+Insert the following record into the Franchise table:Franchise No MF999Franchise Name Mature Fash ions (Shet lands)Franchise Address I. Lonely Spot, 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/14/Java面试题12/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
