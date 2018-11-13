@@ -108,16 +108,24 @@
 
 
 
-  <meta name="description" content="如果你把每一天都当作生命中最后一天去生活的话,那么有一天你会发现你是正确的！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="辉哥最帅">
-<meta property="og:url" content="http://yoursite.com/tags/Java/index.html">
+  <meta name="description" content="链表什么是链表链表不需要一块连续的内存空间，它通过“指针”将一组零散的内存块串联起来使用。其中，我们把内存块称为链表的“结点”。为了将所有的结点串起来，每个链表的结点除了存储数据之外，还需要记录链上的下一个结点的地址。 链表的优劣优点: 在链表插入和删除一个数据是非常快的, 只需要修改结点中存储的地址, 时间复杂度为O(1) 缺点: 随机访问某个元素, 效率比较低, 需要根据指针一个结点一个结点地">
+<meta name="keywords" content="数据结构和算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构和算法4-链表">
+<meta property="og:url" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/index.html">
 <meta property="og:site_name" content="辉哥最帅">
-<meta property="og:description" content="如果你把每一天都当作生命中最后一天去生活的话,那么有一天你会发现你是正确的！">
+<meta property="og:description" content="链表什么是链表链表不需要一块连续的内存空间，它通过“指针”将一组零散的内存块串联起来使用。其中，我们把内存块称为链表的“结点”。为了将所有的结点串起来，每个链表的结点除了存储数据之外，还需要记录链上的下一个结点的地址。 链表的优劣优点: 在链表插入和删除一个数据是非常快的, 只需要修改结点中存储的地址, 时间复杂度为O(1) 缺点: 随机访问某个元素, 效率比较低, 需要根据指针一个结点一个结点地">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/插入和删除.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/单链表.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/双向链表.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/循环链表.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/双向循环链表.png">
+<meta property="og:updated_time" content="2018-11-13T08:48:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="辉哥最帅">
-<meta name="twitter:description" content="如果你把每一天都当作生命中最后一天去生活的话,那么有一天你会发现你是正确的！">
+<meta name="twitter:title" content="数据结构和算法4-链表">
+<meta name="twitter:description" content="链表什么是链表链表不需要一块连续的内存空间，它通过“指针”将一组零散的内存块串联起来使用。其中，我们把内存块称为链表的“结点”。为了将所有的结点串起来，每个链表的结点除了存储数据之外，还需要记录链上的下一个结点的地址。 链表的优劣优点: 在链表插入和删除一个数据是非常快的, 只需要修改结点中存储的地址, 时间复杂度为O(1) 缺点: 随机访问某个元素, 效率比较低, 需要根据指针一个结点一个结点地">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/13/数据结构和算法4-链表/插入和删除.png">
 
 
 
@@ -126,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Java/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/13/数据结构和算法4-链表/">
 
 
 
@@ -136,7 +144,7 @@
   };
 </script>
 
-  <title>标签: Java | 辉哥最帅</title>
+  <title>数据结构和算法4-链表 | 辉哥最帅</title>
   
 
 
@@ -193,7 +201,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -250,7 +258,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
@@ -328,320 +336,250 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Java<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/13/数据结构和算法4-链表/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="辉哥">
+      <meta itemprop="description" content="如果你把每一天都当作生命中最后一天去生活的话,那么有一天你会发现你是正确的！">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="辉哥最帅">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/10/30/Java面试题21/" itemprop="url">
-              
-                <span itemprop="name">Java面试题21</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">数据结构和算法4-链表
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-10-30T18:32:14+08:00" content="2018-10-30">
-          10-30
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-13 15:16:18 / 修改时间：16:48:54" itemprop="dateCreated datePublished" datetime="2018-11-13T15:16:18+08:00">2018-11-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/数据结构和算法/" itemprop="url" rel="index"><span itemprop="name">数据结构和算法</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Java面试题20/" itemprop="url">
-              
-                <span itemprop="name">Java面试题20</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-15T11:14:45+08:00" content="2018-09-15">
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Java面试题19/" itemprop="url">
-              
-                <span itemprop="name">Java面试题19</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-15T10:35:59+08:00" content="2018-09-15">
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Java面试题18/" itemprop="url">
-              
-                <span itemprop="name">Java面试题18</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-15T09:20:50+08:00" content="2018-09-15">
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Java面试题17/" itemprop="url">
-              
-                <span itemprop="name">Java面试题17</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-15T08:49:42+08:00" content="2018-09-15">
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/15/Java面试题16/" itemprop="url">
-              
-                <span itemprop="name">Java面试题16</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-15T08:26:42+08:00" content="2018-09-15">
-          09-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/14/Java面试题15/" itemprop="url">
-              
-                <span itemprop="name">Java面试题15</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-14T22:29:37+08:00" content="2018-09-14">
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/14/Java面试题14/" itemprop="url">
-              
-                <span itemprop="name">Java面试题14</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-14T22:28:55+08:00" content="2018-09-14">
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/14/Java面试题13/" itemprop="url">
-              
-                <span itemprop="name">Java面试题13</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-14T22:26:53+08:00" content="2018-09-14">
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/14/Java面试题12/" itemprop="url">
-              
-                <span itemprop="name">Java面试题12</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-09-14T22:22:56+08:00" content="2018-09-14">
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h3 id="什么是链表"><a href="#什么是链表" class="headerlink" title="什么是链表"></a>什么是链表</h3><p>链表不需要一块连续的内存空间，它通过“指针”将一组零散的内存块串联起来使用。其中，我们把内存块称为链表<br>的“结点”。为了将所有的结点串起来，每个链表的结点除了存储数据之外，还需要记录链上的下一个结点的地址。</p>
+<h3 id="链表的优劣"><a href="#链表的优劣" class="headerlink" title="链表的优劣"></a>链表的优劣</h3><p>优点: 在链表插入和删除一个数据是非常快的, 只需要修改结点中存储的地址, 时间复杂度为O(1)</p>
+<p>缺点: 随机访问某个元素, 效率比较低, 需要根据指针一个结点一个结点地依次遍历, 直到找到相应的结点。时间复杂度为O(n), 最好情况时间复杂度为O(1), 最坏情况时间复杂度为O(n), 平均时间复杂度为O(n)<br><img src="/2018/11/13/数据结构和算法4-链表/插入和删除.png"></p>
+<h3 id="常见的链表"><a href="#常见的链表" class="headerlink" title="常见的链表"></a>常见的链表</h3><ol>
+<li>单链表<br><img src="/2018/11/13/数据结构和算法4-链表/单链表.png"></li>
+<li>双向链表<br><img src="/2018/11/13/数据结构和算法4-链表/双向链表.png"></li>
+<li>循环链表<br><img src="/2018/11/13/数据结构和算法4-链表/循环链表.png"></li>
+<li>双向循环链表<br><img src="/2018/11/13/数据结构和算法4-链表/双向循环链表.png"></li>
+</ol>
+<h3 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h3><p>空间换时间: 当内存空间充足的时候，如果我们更加追求代码的执行速度，我们就可以选择空间复杂度相对较高、但时间复杂度相对很低的算法或者数据结构。<br>时间换空间: 如果内存比较紧缺, 比如代码跑在手机或者单片机上，这个时候，就要反过来用时间换空间的设计思路。</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>感谢大家对我的支持!</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="辉哥 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="辉哥 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>辉哥</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/11/13/数据结构和算法4-链表/" title="数据结构和算法4-链表">http://yoursite.com/2018/11/13/数据结构和算法4-链表/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构和算法/" rel="tag"># 数据结构和算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/13/数据结构和算法3-数组/" rel="next" title="数据结构和算法3-数组">
+                <i class="fa fa-chevron-left"></i> 数据结构和算法3-数组
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/tags/Java/page/2/">2</a><a class="page-number" href="/tags/Java/page/3/">3</a><a class="extend next" rel="next" href="/tags/Java/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -662,8 +600,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -797,6 +744,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#链表"><span class="nav-number">1.</span> <span class="nav-text">链表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是链表"><span class="nav-number">1.1.</span> <span class="nav-text">什么是链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链表的优劣"><span class="nav-number">1.2.</span> <span class="nav-text">链表的优劣</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见的链表"><span class="nav-number">1.3.</span> <span class="nav-text">常见的链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计思想"><span class="nav-number">1.4.</span> <span class="nav-text">设计思想</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -952,6 +915,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
