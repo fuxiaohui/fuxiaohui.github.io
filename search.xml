@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title>Java面试题24</title>
+      <link href="/2019/04/22/Java%E9%9D%A2%E8%AF%95%E9%A2%9824/"/>
+      <url>/2019/04/22/Java%E9%9D%A2%E8%AF%95%E9%A2%9824/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>请写出下列代码的运行结果, 如有错误请先进行修改</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">resetList</span><span class="params">(List&lt;Integer&gt; dataList)</span> </span>&#123;</span><br><span class="line">    dataList.subList(<span class="number">2</span>, <span class="number">4</span>).set(<span class="number">0</span>, <span class="number">50</span>);</span><br><span class="line">    dataList = <span class="keyword">new</span> ArrayList&lt;&gt;(dataList);</span><br><span class="line">    dataList.add(<span class="number">20</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">setOne</span><span class="params">(List&lt;Integer&gt; dataList)</span> </span>&#123;</span><br><span class="line">    dataList.set(<span class="number">3</span>, <span class="number">80</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; dataList = <span class="keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="keyword">null</span>));</span><br><span class="line">    resetList(dataList);</span><br><span class="line">    setOne(dataList);</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (Integer v : dataList) &#123;</span><br><span class="line">        sum += v;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>请对比<code>Exception</code>和<code>Error</code>的区别? 运行时异常与一般异常有何区别? <code>NoClassDefFoundError</code>和<code>ClassNotFoundException</code>有何区别?</p></li><li>请问一下集合框架有何不同, <code>HashTable</code>、<code>HashMap</code>、<code>TreeMap</code>?</li><li>请列举你了解的<code>Java</code>垃圾收集器, 并说明其特点?</li><li>请列举<code>Spring</code>框架中用到了哪些设计模式, 并举例说明.</li><li>请编写<code>MySQL</code>的分页查询语句, 要考虑性能和优化问题.</li><li>一个社区网站每天成千上万的人在上面写博客, 如何让程序自动快速判断这篇文章是抄袭另一篇文章是网站负责人比较头疼的问题, 如果把这个问题交给你, 你会怎么解决? 请描述你解决这个问题的思路</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 人民在线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java面试题23</title>
       <link href="/2019/04/16/Java%E9%9D%A2%E8%AF%95%E9%A2%9823/"/>
       <url>/2019/04/16/Java%E9%9D%A2%E8%AF%95%E9%A2%9823/</url>

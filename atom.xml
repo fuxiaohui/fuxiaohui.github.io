@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huigezuishuai.gitee.io/"/>
-  <updated>2019-04-16T08:00:17.000Z</updated>
+  <updated>2019-04-22T08:10:01.000Z</updated>
   <id>http://huigezuishuai.gitee.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面试题24</title>
+    <link href="http://huigezuishuai.gitee.io/2019/04/22/Java%E9%9D%A2%E8%AF%95%E9%A2%9824/"/>
+    <id>http://huigezuishuai.gitee.io/2019/04/22/Java面试题24/</id>
+    <published>2019-04-22T07:06:25.000Z</published>
+    <updated>2019-04-22T08:10:01.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;请写出下列代码的运行结果, 如有错误请先进行修改&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Java面试题" scheme="http://huigezuishuai.gitee.io/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="Java" scheme="http://huigezuishuai.gitee.io/tags/Java/"/>
+    
+      <category term="人民在线" scheme="http://huigezuishuai.gitee.io/tags/%E4%BA%BA%E6%B0%91%E5%9C%A8%E7%BA%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>Java面试题23</title>
@@ -532,33 +562,6 @@
         
           &lt;h3 id=&quot;一、单项选择题&quot;&gt;&lt;a href=&quot;#一、单项选择题&quot; class=&quot;headerlink&quot; title=&quot;一、单项选择题&quot;&gt;&lt;/a&gt;一、单项选择题&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Java是从(          )语言改进重新设计。&lt;br&gt;A.
-        
-      
-    
-    </summary>
-    
-      <category term="Java面试题" scheme="http://huigezuishuai.gitee.io/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="Java" scheme="http://huigezuishuai.gitee.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题10</title>
-    <link href="http://huigezuishuai.gitee.io/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9810/"/>
-    <id>http://huigezuishuai.gitee.io/2018/09/14/Java面试题10/</id>
-    <published>2018-09-14T13:00:07.000Z</published>
-    <updated>2018-09-14T14:18:50.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编写逆续输出给定字特串的方法，方法不返回值，结果输出在屏幕上，如参数为”abede” ，屏幕输出的效果为: edeba.
         
       
     
