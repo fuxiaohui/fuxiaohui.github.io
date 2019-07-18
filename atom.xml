@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huigezuishuai.gitee.io/"/>
-  <updated>2019-05-06T06:47:21.000Z</updated>
+  <updated>2019-07-18T08:34:10.000Z</updated>
   <id>http://huigezuishuai.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>北部创新业务部驻中原银行分享(第一季)</title>
+    <link href="http://huigezuishuai.gitee.io/2019/07/18/share1/"/>
+    <id>http://huigezuishuai.gitee.io/2019/07/18/share1/</id>
+    <published>2019-07-18T08:01:32.000Z</published>
+    <updated>2019-07-18T08:34:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第1期&quot;&gt;&lt;a href=&quot;#第1期&quot; class=&quot;headerlink&quot; title=&quot;第1期&quot;&gt;&lt;/a&gt;第1期&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;培训主题&lt;/strong&gt;:
+        
+      
+    
+    </summary>
+    
+      <category term="分享" scheme="http://huigezuishuai.gitee.io/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="宇信" scheme="http://huigezuishuai.gitee.io/tags/%E5%AE%87%E4%BF%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Dockerfile语法</title>
@@ -106,20 +132,11 @@
     <link href="http://huigezuishuai.gitee.io/2019/04/16/Java%E9%9D%A2%E8%AF%95%E9%A2%9822/"/>
     <id>http://huigezuishuai.gitee.io/2019/04/16/Java面试题22/</id>
     <published>2019-04-16T06:46:03.000Z</published>
-    <updated>2019-05-22T07:51:03.000Z</updated>
+    <updated>2019-07-18T07:54:54.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;一．选择题&quot;&gt;&lt;a href=&quot;#一．选择题&quot; class=&quot;headerlink&quot; title=&quot;一．选择题&quot;&gt;&lt;/a&gt;一．选择题&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;以下属于面向对象的特征的是（ ）&lt;/p&gt;
-&lt;p&gt;A.      重载  &lt;/p&gt;
-&lt;p&gt;B.  
-        
-      
+      The article has been encrypted, please enter your password to view.&lt;br&gt;
     
     </summary>
     
@@ -530,33 +547,6 @@
         
         
           &lt;h2 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot; class=&quot;headerlink&quot; title=&quot;Java基础&quot;&gt;&lt;/a&gt;Java基础&lt;/h2&gt;&lt;h3 id=&quot;一、填空题（每题1分，共10分）&quot;&gt;&lt;a href=&quot;#一、填空题（每题1分，共10分）&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Java面试题" scheme="http://huigezuishuai.gitee.io/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="Java" scheme="http://huigezuishuai.gitee.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题12</title>
-    <link href="http://huigezuishuai.gitee.io/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9812/"/>
-    <id>http://huigezuishuai.gitee.io/2018/09/14/Java面试题12/</id>
-    <published>2018-09-14T14:22:56.000Z</published>
-    <updated>2018-09-14T14:24:41.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Insert the following record into the Franchise table:&lt;br&gt;Franchise No MF999&lt;br&gt;Franchise Name Mature Fash ions (Shet
         
       
     
