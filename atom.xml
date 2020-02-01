@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://huigezuishuai.com/"/>
-  <updated>2019-07-18T08:34:10.000Z</updated>
+  <updated>2020-02-01T04:30:28.811Z</updated>
   <id>https://huigezuishuai.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面试题25</title>
+    <link href="https://huigezuishuai.com/2020/02/01/Java%E9%9D%A2%E8%AF%95%E9%A2%9825/"/>
+    <id>https://huigezuishuai.com/2020/02/01/Java面试题25/</id>
+    <published>2020-02-01T04:17:37.000Z</published>
+    <updated>2020-02-01T04:30:28.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;编程题：罗马数字转换成阿拉伯数字&quot;&gt;&lt;a href=&quot;#编程题：罗马数字转换成阿拉伯数字&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java面试题" scheme="https://huigezuishuai.com/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="Java" scheme="https://huigezuishuai.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins常用插件</title>
+    <link href="https://huigezuishuai.com/2019/08/26/jenkins%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://huigezuishuai.com/2019/08/26/jenkins常用插件/</id>
+    <published>2019-08-26T07:18:36.000Z</published>
+    <updated>2019-08-26T07:19:28.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="SDL" scheme="https://huigezuishuai.com/categories/SDL/"/>
+    
+    
+      <category term="jenkins" scheme="https://huigezuishuai.com/tags/jenkins/"/>
+    
+  </entry>
   
   <entry>
     <title>北部创新业务部驻中原银行分享(第一季)</title>
@@ -488,65 +532,6 @@
         
         
           &lt;p&gt;&lt;strong&gt;题目&lt;/strong&gt;: 使用Spring Boot完成一个http Rest API的开发，可使用你熟悉的数据库和ORM框架.该API使用账户的积分来兑换礼品. 目前可供兑换的礼品为可乐，薯条和咖啡，分别需要30,
-        
-      
-    
-    </summary>
-    
-      <category term="Java面试题" scheme="https://huigezuishuai.com/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="Java" scheme="https://huigezuishuai.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题14</title>
-    <link href="https://huigezuishuai.com/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9814/"/>
-    <id>https://huigezuishuai.com/2018/09/14/Java面试题14/</id>
-    <published>2018-09-14T14:28:55.000Z</published>
-    <updated>2018-10-30T10:27:34.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;集合的种类与区别&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;集合与一堆数组的区别，请结合做过的项目说一下在何种情况下会使用到一维数组&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;请写出springmvc常用的注解及其作用&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;请简述使用过的we
-        
-      
-    
-    </summary>
-    
-      <category term="Java面试题" scheme="https://huigezuishuai.com/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="Java" scheme="https://huigezuishuai.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题13</title>
-    <link href="https://huigezuishuai.com/2018/09/14/Java%E9%9D%A2%E8%AF%95%E9%A2%9813/"/>
-    <id>https://huigezuishuai.com/2018/09/14/Java面试题13/</id>
-    <published>2018-09-14T14:26:53.000Z</published>
-    <updated>2018-09-14T14:28:13.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Java基础&quot;&gt;&lt;a href=&quot;#Java基础&quot; class=&quot;headerlink&quot; title=&quot;Java基础&quot;&gt;&lt;/a&gt;Java基础&lt;/h2&gt;&lt;h3 id=&quot;一、填空题（每题1分，共10分）&quot;&gt;&lt;a href=&quot;#一、填空题（每题1分，共10分）&quot;
         
       
     
